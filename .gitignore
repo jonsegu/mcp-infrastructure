@@ -1,0 +1,54 @@
+# Terraform working directories
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+**/*.tfstate
+**/*.tfstate.*
+
+# Terraform lock files
+*.lock.hcl
+**/*.lock.hcl
+
+# Terraform plan files
+*.tfplan
+*.plan
+plan.out
+
+# Variable definitions and local overrides
+*.tfvars
+*.tfvars.json
+**/*.auto.tfvars
+**/*.auto.tfvars.json
+
+# Backend and local configuration files
+backend*.hcl
+*.tfrc
+.terraformrc
+
+# Terraform crash and debug logs
+crash.log
+crash.*.log
+*.tf.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI and provider local caches
+.terraform.d/
+
+# Common secrets and credentials artifacts
+*.pem
+*.key
+*.p12
+*.creds
+*.credentials.json
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/*.code-workspace
